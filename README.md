@@ -79,7 +79,7 @@ You will know you have forked and pushed properly if you see your work in Github
 
 ![gSchool](./img/gSchool.png)
 
-Be sure to make a commit in git each time you get a passing test!
+***Be sure to make a commit in git each time you get a passing test!***
 
 ## User Story:
 
