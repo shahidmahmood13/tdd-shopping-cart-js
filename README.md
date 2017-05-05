@@ -57,6 +57,28 @@ As a developer, your task is to implement the following user story, following th
 - Make tests pass with simplest code possible
 - After getting each test to pass, refactor your code and tests to be as concise as possible
 
+## Instructions
+
+***Be sure to fork:***
+
+![Fork](./img/Fork.png)
+
+***then Clone:***
+
+![Clone](./img/Clone.png)
+
+***this repository!***
+
+When you are finished with the exercise, [commit](https://www.atlassian.com/git/tutorials/saving-changes) and [push](https://www.atlassian.com/git/tutorials/syncing#git-push) your work!
+
+You will know you have forked and pushed properly if you see your work in Github under your github account:
+
+![you](./img/personal.png)
+
+***not gSchool:***
+
+![gSchool](./img/gSchool.png)
+
 ## User Story:
 
 - As a shopper
