@@ -5,7 +5,7 @@ describe('Cart', () => {
     it('should initialize as empty', () => {
         const cart = new Cart()
 
-        expect(cart.items).to.be.equal([])
+        expect(cart.items).to.deep.equal([])
         expect(cart.totalPrice).to.be.equal(0)
     })
 })
