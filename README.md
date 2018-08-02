@@ -1,6 +1,6 @@
 # tdd-shopping-cart
 
-You have been hired as a developer at Ali Snobba - a snobby Asian online store where customers purchase high-end merchandise like Louis Vuitton handbags and Rolex watches.
+You have been hired as a developer at Ali Snobba - a snobby online store where customers purchase high-end merchandise like Louis Vuitton handbags and Rolex watches.
 
 Your job is to implement a shopping cart that stores items while customers are in the process of ordering. Since Ali Snobba is a small company with only one server, you don't need to store the items in Redis or a database - you can keep them in an array in memory.
 
