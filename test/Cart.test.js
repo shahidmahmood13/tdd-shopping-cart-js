@@ -44,6 +44,21 @@ describe('Cart', () => {
         expect(result).toBe(assert);
          
     })
+    // 4th test case
+    it("return itemize list",()=>{
+        let assert = `item=${item.name}  price ${item.price} qunity ${2}
+        , item=${item2.name} price${item1.price} ${1}` 
+         const cart = new Cart();
+         const item = new Item("power-bank",5000, true);
+         const item1 = new Item("iphone-x",60000, false);
+       cart.Additem(item,2);
+       cart.Additem(item1,1);
+       let result = itemQuantities();
+       expect(result).toBe(assert);
+    
+
+    })
+
 
 
 })

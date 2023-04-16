@@ -35,4 +35,11 @@ module.exports = class Cart {
 
     }
 
+    itemizedList=()=>{
+      
+
+    }
+
+
+
 }
