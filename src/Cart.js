@@ -44,6 +44,13 @@ module.exports = class Cart {
     return itemlist;
 
     }
+    onsaleitem=()=>{
+
+
+        const onSaleItems = this.items.filter(item => item.onSale);
+        return onSaleItems;
+
+    }
 
 
 

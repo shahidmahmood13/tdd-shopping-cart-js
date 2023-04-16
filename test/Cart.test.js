@@ -72,9 +72,15 @@ describe('Cart', () => {
    expect(result).toBe(assert)
         
     })
-    it('list of item thats are on sale ',(){
-        let assert = "";
-          const  cart = new 
+    it('list of item thats are on sale ',()=>{
+        let assert =  [{name: "power-bank", onSale: true, price: 500, quantity: 1}];
+       const cart = new Cart();
+       const item = new Item("power-bank",500, true);
+      const item1 = new Item("iphone-x",50000, false);
+      cart.Additem(item,1);
+      cart.Additem(item1,4)
+          let result = cart.onsaleitem();
+          expect(result).toStrictEqual(assert);
         
 
     })
