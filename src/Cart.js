@@ -29,8 +29,9 @@ module.exports = class Cart {
        
        for( let i = 0 ; i<this.items.length; i++){
         itemQuantity +=this.items[i].quantity;
-         
+
        }
+      
        return itemQuantity;
 
     }

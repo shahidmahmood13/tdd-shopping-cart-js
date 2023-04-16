@@ -3,6 +3,7 @@ const { expect } = require("@jest/globals");
 
 const Cart= require('../src/Cart.js');
 const Item = require('../src/Item.js');
+const { assert } = require("chai");
 // const expect = require('chai').expect;
 
 describe('Cart', () => {
@@ -46,11 +47,11 @@ describe('Cart', () => {
     })
     // 4th test case
     it("return itemize list",()=>{
-        let assert = `power-bank price 5000  qunity 2 iphone-x price 60000  qunity 1 `
+        let assert = `power-bank price 5000  qunity 1 iphone-x price 60000  qunity 1 `
          const cart = new Cart();
          const item = new Item("power-bank",5000, true);
          const item1 = new Item("iphone-x",60000, false);
-       cart.Additem(item,2);
+       cart.Additem(item,1);
        cart.Additem(item1,1);
       
        
@@ -59,6 +60,26 @@ describe('Cart', () => {
        expect(result).toBe(assert);
     
     })
+    it('Toatal price of item',()=>{
+      let assert = 100000;
+      const cart = new Cart();
+      const item = new Item("power-bank",500, true);
+      const item1 = new Item("iphone-x",50000, false);
+    cart.Additem(item,1);
+    cart.Additem(item1,4);
+
+    let result = cart.totalPrice;
+   expect(result).toBe(assert)
+        
+    })
+    it('list of item thats are on sale ',(){
+        let assert = "";
+          const  cart = new 
+        
+
+    })
+
+    
 
 
 
