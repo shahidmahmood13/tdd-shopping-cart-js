@@ -4,6 +4,7 @@ module.exports = class Cart {
     constructor (){
         this.items= [];
         this.totalPrice=0;
+       
     }
 
     getCart=()=>{
@@ -14,7 +15,7 @@ module.exports = class Cart {
     Additem =(item , quantity) => {
         
            this.items.push({...item, quantity})
-           for( let i=0; i<this.items.length; i++){
+           for( let i=0 ; i<this.items.length; i++){
 
            this.totalPrice += this.items[i].price*quantity;
 
@@ -22,13 +23,16 @@ module.exports = class Cart {
           return this.items;
 
     }
-    itemQuantities=()=>{
-        return  this.items.length;
 
+    itemQuantities=()=>{
+       let itemQuantity=0;
+       
+       for( let i = 0 ; i<this.items.length; i++){
+        itemQuantity +=this.items[i].quantity;
+         
+       }
+       return itemQuantity;
 
     }
-   
-    
-
 
 }

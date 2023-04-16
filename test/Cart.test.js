@@ -28,7 +28,7 @@ describe('Cart', () => {
 
     })
     it ('show the total no of item i have added',()=>{
-        let assert = 5;
+        let assert = 8;
        const cart = new Cart();
        const item = new Item("iphone-13pro",80000, false);
        const item1 = new Item("iphone-x",60000, false);
@@ -39,15 +39,10 @@ describe('Cart', () => {
         cart.Additem(item2,1);
         cart.Additem(item3,1);
           
-        let result = cart.itemQuantities;
+        let result = cart.itemQuantities();
 
         expect(result).toBe(assert);
          
-
-        
-
-        
-
     })
 
 
