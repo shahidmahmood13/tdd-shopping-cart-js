@@ -36,7 +36,11 @@ module.exports = class Cart {
     }
 
     itemizedList=()=>{
-      
+  let itemlist ='';
+   this.items.forEach(item => {
+   itemlist += `${item.name} price ${item.price}  qunity ${item.quantity} `   
+   });
+    return itemlist;
 
     }
 
