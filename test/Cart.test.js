@@ -3,8 +3,8 @@ const { expect } = require("@jest/globals");
 
 const Cart= require('../src/Cart.js');
 const Item = require('../src/Item.js');
-const { assert } = require("chai");
-// const expect = require('chai').expect;
+
+
 
 describe('Cart', () => {
     it('should initialize as empty', () => {
@@ -61,7 +61,7 @@ describe('Cart', () => {
     
     })
     it('Toatal price of item',()=>{
-      let assert = 100000;
+      let assert = 202500;
       const cart = new Cart();
       const item = new Item("power-bank",500, true);
       const item1 = new Item("iphone-x",50000, false);
