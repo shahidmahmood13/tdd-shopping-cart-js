@@ -61,7 +61,7 @@ describe('Cart', () => {
     
     })
     it('Toatal price of item',()=>{
-      let assert = 202500;
+      let assert = 200500;
       const cart = new Cart();
       const item = new Item("power-bank",500, true);
       const item1 = new Item("iphone-x",50000, false);
